@@ -27,8 +27,6 @@
 	top: 17.85%;
 }
 
-
-
 #nav-header {
 	width: 100%;
 	height: 83px;
@@ -37,6 +35,7 @@
 
 .data-tab {
 	line-height: 83px;
+	font-size: 24px;
 }
 
 #footer {
