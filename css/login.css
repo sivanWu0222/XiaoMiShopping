@@ -4,11 +4,16 @@
 }
 
 #header-logo {
-	width: 1000px;;
-	margin: 0px 10%;
+	width: 1000px;
+	margin: 0px 12.71%;
 }
 
 #content {
 	width: 100%;
+	height: 588px;
 	background-image: url(../images/523923ee3d985386d832e082980e4de9.jpg);
+}
+
+#footer {
+	
 }
