@@ -13,6 +13,7 @@
 	<link rel="shortcut icon" href="images/favicon.ico">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/login.css">
+	<script src="js/jquery-3.2.1.min.js"></script>
 </head>
 <body>
 	<div id="header">
@@ -35,16 +36,34 @@
                 	描述：用户输入账户和密码进行登录
                 -->
                 <div id="nav-header">
-                	<a href="javascript:void(0)" class="data-tab">帐号登录</a>
-                	<span class="line" class="data-tab"> | </span>
-                	<a href="javascript:void(0)" class="data-tab">扫码登录</a>
+                	<a href="javascript:void(0)" id="user-pass" class="data-tab">帐号登录</a>
+                	<span class="line data-tab">|</span>
+                	<a href="javascript:void(0)" class="data-tab" id="scan-scope">扫码登录</a>
                 </div>
                 <div id="nav-content">
                 	<div id="tab-user" class="data-form">
                 		<form action="" method="post">
                 			<input type="text" placeholder="邮箱/手机号码/小米ID" class="form-content"/><br/>
 							<input type="password" placeholder="密码" class="form-content"/><br/>
-							<input type="submit" value="登录" class="form-content"/>
+							<input type="button" value="登录" class="form-content form-submit"/>
+                			<div class="data-form-others">
+                				<a href=""><span>立即注册</span></a>
+                				<span>|</span>
+                				<a href=""><span>忘记密码？</span></a>
+                			</div>
+                			<div class="data-login-others">
+                				<fieldset>
+                					<legend align="center">其他方式登录</legend>
+                				</fieldset>
+                				<div class="data-login-others-icon">
+                					<ul>
+                						<li id="data-li-qq"><a href=""><span class="icons qq"></span></a></li>
+                						<li id="data-li-sina"><a href=""><span class="icons sina"></span></a></li>
+                						<li id="data-li-Alipay"><a href=""><span class="icons Alipay"></span></a></li>
+                						<li id="data-li-Wepay"><a href=""><span class="icons WeChat"></span></a></li>
+                					</ul>
+                				</div>
+                			</div>
                 		</form>
 					</div>
 					<!--
@@ -53,7 +72,10 @@
 	                	描述：用户通过手机进行扫码进行登录
 	                -->
 					<div id="tab-scan" class="data-form">
-						
+						<img src="images/canvas.png" width="180px" height="180px"/>
+						<!--<canvas id="" width="180px" height="180px" ></canvas>-->
+						<div id="tab-scan-description" class="tab-scan-content">使用<a href="">小米商城APP</a>扫一扫</div>
+						<div class="tab-scan-content">小米手机可打开「设置」>「小米帐号」扫码登录</div>
 					</div>
                 </div>
 			</div>
@@ -80,7 +102,25 @@
 	</div>
 </body>
 <script>
-	window.onload = function(){
-	};
+	$(function(){
+		$("#user-pass").css("color", "rgb(245, 102, 0)");
+		$("#footer-span span").eq(0).css("color","black");
+		$("#tab-scan").hide();
+		$("#scan-scope").click(function(){
+			$("#scan-scope").css("color", "rgb(245, 102, 0)");
+			$("#user-pass").css("color", "rgb(102,102,102)");
+			$("#tab-user").hide();
+			$("#tab-scan").show();
+		});
+		$("#user-pass").click(function(){
+			$("#scan-scope").css("color", "rgb(102,102,102)");
+			$("#user-pass").css("color", "rgb(245, 102, 0)");
+			$("#tab-user").show();
+			$("#tab-scan").hide();
+		});
+		
+		
+		
+	});
 </script>
 </html>
