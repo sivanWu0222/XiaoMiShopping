@@ -13,6 +13,14 @@ a {
 	margin: 0px 12.8%;
 }
 
+
+.xiaomi {
+	overflow: hidden;
+	display: block;
+	
+}
+
+
 #content {
 	width: 100%;
 	height: 588px;
