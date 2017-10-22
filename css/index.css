@@ -37,6 +37,8 @@
 	float: left;
 	width: 120px;
 	line-height: 40px;
+	margin-left: 40px;
+	background-color: rgb(66,66,66);
 }
 
 .shopping-cart:hover {
@@ -48,6 +50,22 @@
 	color: red;
 }
 
+.fa-shopping-cart {
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
 .shopping-cart span {
 	letter-spacing: 3px;
+}
+
+.shopping-card {
+	width: 316px;
+	height: 98px;
+	display: none;
+}
+
+.shopping-card span {
+	display: block;
+	
 }
