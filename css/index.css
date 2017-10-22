@@ -24,6 +24,10 @@
 	letter-spacing: 0.01px;
 }
 
+.line {
+	color: rgb(66,66,66);
+}
+
 .nav-index-left,.nav-index-right a:hover {
 	color: rgb(255,255,255);
 }
@@ -33,6 +37,10 @@
 	float: left;
 	width: 120px;
 	line-height: 40px;
+}
+
+.shopping-cart:hover {
+	background-color: rgb(255,255,255);
 }
 
 .shopping-cart:hover {
