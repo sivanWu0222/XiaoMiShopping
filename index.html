@@ -44,10 +44,17 @@
 			<a href="">消息通知</a>
 		</div>
 		<a href="" class="shopping-cart"><i class="fa fa-shopping-cart"></i>购物车<span>(0)</span> </a>
+		<div id="shopping-card">
+			<span>您的购物车中还没有任何商品</span>
+		</div>
 	</div>
 </body>
 <script type="text/javascript">
 	$(function(){
+		$("#shopping-card").hide();
+		$(".shopping-cart").mouseover(function(){
+			$("#shopping-card").show();
+		})
 		
 		
 	});
