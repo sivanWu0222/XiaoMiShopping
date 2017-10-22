@@ -74,11 +74,11 @@
 #content {
 	width: 1226px;
 	height: 100px;
-	margin: 25px auto;
+	margin: 22px 145px;
 }
 
 .nav-icon {
-	
+	float: left;
 }
 
 .nav-index {
