@@ -69,3 +69,9 @@
 .shopping-card span {
 	display: block;
 }
+
+
+#content {
+	width: 1226px;
+	height: 100px;
+}
