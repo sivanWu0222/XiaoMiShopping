@@ -28,9 +28,10 @@
 	color: rgb(66,66,66);
 }
 
-.nav-index-left,.nav-index-right a:hover {
+.nav-index-left a:hover,.nav-index-right a:hover {
 	color: rgb(255,255,255);
 }
+
 
 .shopping-cart {
 	display: block;
