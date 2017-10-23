@@ -104,10 +104,16 @@
 }
 
 .search-input {
-	
+	margin-left: 80%;
 	width: 245px;
 	height: 50px;
 	
+}
+
+.search-input input {
+	display: block;
+	width: 245px;
+	height: 50px;
 }
 
 
