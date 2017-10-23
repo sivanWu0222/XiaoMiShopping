@@ -1,6 +1,9 @@
 .adv-header{
 	height: 120px;
-	background-image: url(../images/cms_15086594114041_asotb.jpg);
+}
+
+.adv-header a img{
+	float: left;
 }
 
 .header {
@@ -113,7 +116,7 @@
 .search-input input {
 	display: block;
 	width: 245px;
-	height: 46px;
+	/*height: 46px;*/
 }
 
 
